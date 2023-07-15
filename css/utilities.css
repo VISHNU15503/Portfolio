@@ -1,0 +1,56 @@
+.flex{
+    display:flex;
+}
+
+.items-center{  
+    align-items:center;
+}  /*make all buttons in center*/
+
+.justify-between{
+    justify-content: space-between;
+}  /*to send contact button at corner*/
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-primary{
+    background: var(--color1);
+    color: var();
+}
+
+.btn-primary:hover{
+    background:transparent;
+    border-color: var(--color1);
+    color: var(--color1);
+}
+
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--color1);
+}
+
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--color1);
+
+}
+
+.flex-1{
+    flex:1;
+}
+
+.flex-2{
+    flex:2;
+}
+
+.justify-center{
+    justify-content:center;
+}

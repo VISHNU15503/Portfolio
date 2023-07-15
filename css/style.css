@@ -1,0 +1,594 @@
+@import 'utilities.css';
+
+:root{
+    --primary: rgb(30, 123, 162); 
+    --dark: rgb(6, 0, 0);
+    --pure: #f7ebf0a3; 
+    --ternary: rgb(149, 197, 223); 
+    --light: #564e4e;
+    --color1: rgba(34, 172, 161, 0.814);
+    --color2: rgba(255, 255, 255, 0.949); 
+    --color3: rgb(185, 111, 123);
+
+}
+
+body{
+    height: 700px;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:1rem;
+}
+
+header nav .left a:hover{
+    color:var(--primary);
+    transition:all .3s ease;
+}
+
+header nav{
+    padding:2rem 0;
+}
+
+header nav .branding{
+    margin-right:10rem;
+}
+
+.photo2{
+    padding:10rem, 1rem;
+}
+
+.photo2 .left img{
+    width: 400px;
+}
+
+.photo2 .right{
+    width: 400px;
+    color: var(--color2);
+}
+
+.photo2 .right h4{
+    font-size: 3rem;
+    color: var(--color3);
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    margin-top:  5rem;
+}
+
+.photo2 .right h1{
+    font-size: 2rem;
+    font-weight: 80;
+    line-height:1.2;
+    margin-bottom: 3rem;
+
+}
+
+.photo2 .right h1 span{
+    color: var(--color3);
+}
+
+/*.photo2 .right h2{
+    color: rgb(188, 141, 169);
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-weight:350;
+}*/
+
+.photo .right{
+    margin-top: -7rem;
+}
+
+section.about{
+    background: rgb(226, 228, 232);
+}
+
+section{
+    padding:2rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+    width: 300px;
+}
+
+section.about h1{
+    color: rgb(8, 41, 99);
+    margin-bottom:2rem;
+    font-size: 1.8rem;
+}
+
+section.about h1 span{
+    color: rgb(35, 90, 178);
+}
+
+section.about h3{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color:rgb(97, 87, 87)
+}
+
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: rgb(81, 80, 88);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition:all .3s ease;
+}
+
+section.about .social a:hover{
+    background:var(--ternary);
+}
+
+section.about-more{
+    background: rgb(223, 215, 220);
+}
+
+.section-heading{
+    margin-top: 4rem;
+    color: rgb(97, 11, 85);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+
+.section-heading span{
+    color: rgb(183, 46, 165);
+}
+
+.section-heading + h2{
+    color:  rgb(60, 47, 58);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+section.about-more .card-wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 4.5rem;
+}
+
+section.about-more .card-wrapper .card{
+    background: rgb(238, 228, 238);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+}
+
+section.about-more .card-wrapper .card img{
+    height: 75px; 
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+section.about-more .card-wrapper .card h2{
+    font-weight: 520;
+    font-size: 1.2rem;
+    color:rgb(39, 34, 34);
+    margin-bottom: 0.5rem;
+}
+
+section.about-more .card-wrapper .card p{
+    font-family: 'Lato' sans-serif;
+    color:#301c34;
+    line-height: 1.6;
+}
+
+section.about-more .card-wrapper .card:hover{
+    background:rgb(30, 4, 26);
+}
+
+section.about-more .card-wrapper .card:hover h2, section.about-more .card-wrapper .card:hover p{
+    color:rgb(234, 242, 246);
+}
+
+.project{
+    margin-top: 5rem;
+    color: rgb(64, 68, 28);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+
+.project span{
+    color: rgb(87, 92, 37);
+}
+
+.project + h2{
+    color:  rgb(22, 66, 51);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+section.projects{
+    background: rgb(239, 234, 234);
+}
+
+section.projects .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem;
+}
+
+section.projects .card-wrapper .card img{
+    height: 450px; 
+    width: 600px;
+    padding-right: 5rem;
+}
+
+section.projects .card-wrapper .card .overlay{
+    height: 450px; 
+    width: 600px;
+    padding-right: 5rem;
+}
+
+section.projects .card-wrapper .card{
+    position: relative;
+
+}
+
+section.projects .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(197, 202, 203, 0.9);
+    align-items: center;
+    flex-direction: column;
+    color: rgb(24, 26, 5);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+section.projects .card-wrapper .card .overlay a{
+    color: rgb(60, 63, 18);
+    text-decoration: none;
+}
+
+section.projects .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+
+section.contact{
+    background: rgb(232, 245, 237);
+}
+
+.contact{
+    margin-top: 4rem;
+    color: rgb(24, 71, 41);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+}
+
+.contact span{
+    color: rgb(48, 123, 76);
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    margin-bottom: 2rem;
+}
+
+section.contact .card-wrapper .card h2{
+    font-weight: 1000;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: black;
+    line-height:1.2;
+    font-weight: 400;
+}
+
+section.contact .card-wrapper .card img{
+    height: 60px; 
+    width: 60px;
+}
+
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor:  pointer;
+}
+
+.hamberger img{
+    width: 30px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: rgb(20, 21, 21);
+    font-size: 5rem;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    padding: 4rem, ;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    line-height: 5.5rem;
+    text-align: center;
+    text-decoration: none;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 30px;
+}
+
+.mobile-nav{
+    list-style-type: none;
+    background:rgb(34, 56, 68); 
+}
+
+.mobile-nav ul li a{
+    margin-top: 4rem;
+    font-size: 2rem;
+    line-height: 3;
+    color: rgb(115, 116, 41);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.mobile-nav ul li a:hover{
+    color:rgb(134, 72, 111);
+}
+
+
+/* *********************************************************************************************************/
+@media (max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+    .photo2 .left img{
+        width: 300px;
+        height: 360px;
+    }
+
+    .photo2 .right h4 {
+        font-size: 2.5rem;
+    }
+
+    header{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+
+    section.about .about-me-img {
+        height: 320px;
+    }
+
+    section.about-more .card-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section.projects .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.projects .card-wrapper .card img {
+        height: 370px;
+        width: 654px;
+    }
+
+    .mobile-nav{
+        text-align: center;
+        position: fixed;
+    }
+
+}
+
+@media (max-width: 800px){
+    .photo2{
+        flex-direction: column;
+    }
+
+    .photo2 .left img{
+        width: 250px;
+        height: 450px;
+    }
+
+    header{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+
+/*.photo2 .right {
+    position: absolute;
+    top: 40px;
+    padding: 0 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}*/
+
+/*.photo2 .left{
+    margin-top: -7rem;
+    margin-right: -9rem;
+    padding-bottom: 3rem;
+}*/
+
+/*.photo2 .right h4 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    color:rgb(118, 50, 101);
+    font-weight: 600;
+}*/
+
+/*.photo2 .right h1 {
+    font-size: 1.5rem;
+    color: rgb(234, 207, 230);
+    font-weight: 400;
+
+}
+.photo2 .right h1 span {
+    font-size: 1.5rem;
+    color: rgb(123, 24, 92);
+    font-weight: 400;
+}*/
+
+.about-inner-wrap{
+    flex-direction: column;
+}
+
+.about .right{
+    text-align: center;
+    margin-top: 3rem;
+}
+section{
+    padding: 4rem 0;
+}
+
+.section-heading span{
+    font-size: 2rem; 
+    line-height: 2rem;
+}
+section.about-more .card-wrapper{
+    grid-template-columns: repeat(1,  1fr);
+}
+
+section.contact .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+section.projects .card-wrapper .card img{
+    height: 200px; 
+    width: 400px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.mobile-nav{
+    text-align: center;
+    position: fixed;
+}
+
+}
+
