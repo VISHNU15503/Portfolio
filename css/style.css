@@ -465,6 +465,16 @@ section.curricular .card-wrapper2 .card{
     margin-left: 5rem;
 }
 
+.hidden{
+    display: none;
+}
+
+.clicked{
+    background-color: lightgray;
+    padding: 7px;
+    border-radius: 50%;
+}
+
 section.curricular .card-wrapper2 .card h1{
     margin-top: 1.5rem;
     text-align: center;
