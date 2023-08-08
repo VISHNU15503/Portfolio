@@ -85,11 +85,14 @@ header nav .branding{
 }
 
 .photo2{
-    padding:10rem, 1rem;
+    padding: 10rem, 2rem;
 }
 
 .photo2 .left img{
-    width: 400px;
+    width: 450px;
+    height: 500px;
+    clip-path: circle(50% at 50% 50%);
+    margin-bottom: 1rem;
 }
 
 .photo2 .right{
@@ -117,18 +120,6 @@ header nav .branding{
     color: var(--color3);
 }
 
-/*.photo2 .right h2{
-    color: rgb(188, 141, 169);
-    line-height: 1.5;
-    margin-bottom: 3rem;
-    font-size: 1.5rem;
-    font-weight:350;
-}*/
-
-.photo .right{
-    margin-top: -7rem;
-}
-
 section.about{
     background: rgb(226, 228, 232);
 }
@@ -138,8 +129,10 @@ section{
 }
 
 section.about .about-me-img{
-    height: 450px;
-    width: 300px;
+    height: 500px;
+    width: 400px;
+    border-radius: 2rem;
+
 }
 
 section.about h1{
@@ -166,41 +159,21 @@ section.about p{
     font-weight: 700;
 }
 
-section.about .social{
-    display: flex;
-}
-
-section.about .social a{
-    background: var(--dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-right: 0.6rem;
-    transition:all .3s ease;
-}
-
-section.about .social a:hover{
-    background:var(--ternary);
-}
-
 section.about-more{
     background: rgb(223, 215, 220);
 }
 
 .section-heading{
-    margin-top: 4rem;
-    color: rgb(97, 11, 85);
+    margin-top: 2rem;
+    color: rgb(183, 46, 165);
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 7rem;
     line-height: 0.5;
     font-size: 2rem;
 }
 
 .section-heading span{
-    color: rgb(183, 46, 165);
+    color: rgb(97, 11, 85);
 }
 
 .section-heading + h2{
@@ -214,7 +187,7 @@ section.about-more{
 
 section.about-more .card-wrapper{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 3rem;
     grid-row-gap: 4.5rem;
 }
@@ -227,15 +200,17 @@ section.about-more .card-wrapper .card{
     text-align: center;
     margin-bottom: 1rem;
     transition: all .3s ease;
+    width: 30rem;
+    height: 15rem;
 }
 
 section.about-more .card-wrapper .card img{
-    height: 75px; 
+    height: 70px; 
     position: absolute;
     top: -3.5rem;
     left: 50%;
     transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+    -ms-transform: translateX(-90%);
     -o-transform: translateX(-50%);
 }
 
@@ -243,7 +218,7 @@ section.about-more .card-wrapper .card h2{
     font-weight: 520;
     font-size: 1.2rem;
     color:rgb(39, 34, 34);
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 section.about-more .card-wrapper .card p{
@@ -260,6 +235,7 @@ section.about-more .card-wrapper .card:hover h2, section.about-more .card-wrappe
     color:rgb(234, 242, 246);
 }
 
+
 .project{
     margin-top: 5rem;
     color: rgb(64, 68, 28);
@@ -268,121 +244,286 @@ section.about-more .card-wrapper .card:hover h2, section.about-more .card-wrappe
     line-height: 0.5;
     font-size: 2rem;
 }
-
-.project span{
-    color: rgb(87, 92, 37);
+.section-heading2{
+    margin-top: 2rem;
+    color: rgb(0,100,0);
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 0.5;
+    font-size: 2rem;
 }
 
-.project + h2{
-    color:  rgb(22, 66, 51);
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.4rem;
+.section-heading2 span{
+    color: rgb(85,107,47);
 }
 
 section.projects{
-    background: rgb(239, 234, 234);
+    background: rgb(207, 207, 207);;
 }
 
 section.projects .card-wrapper{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
 }
 
-section.projects .card-wrapper .card img{
-    height: 450px; 
-    width: 600px;
-    padding-right: 5rem;
+section.projects .card-wrapper .card .img-wrapper img{
+    height: 300px; 
+    width: 100%;
 }
 
-section.projects .card-wrapper .card .overlay{
-    height: 450px; 
-    width: 600px;
-    padding-right: 5rem;
+section.projects .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+section.projects .card-wrapper .card .card-content2{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+section.projects .card-wrapper .card .card-content a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:  rgb(8, 75, 56);
+    margin-left: 5rem;
+    text-decoration: none;
+}
+
+section.projects .card-wrapper .card .card-content2 a{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:  rgb(8, 75, 56);
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+section.projects .card-wrapper .card .card-content a:hover{
+    color: rgb(191, 238, 124);
+}
+
+section.projects .card-wrapper .card .card-content2 a:hover{
+    color: rgb(191, 238, 124);
+}
+
+section.projects .card-wrapper .card .card-content span{
+    color: rgb(54, 99, 80);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+section.projects .card-wrapper .card .card-content2 span{
+    color: rgb(54, 99, 80);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 3rem;
+}
+
+section.projects .card-wrapper .card:hover .card-content span{
+    color: rgb(160, 239, 208);
+}
+
+section.projects .card-wrapper .card:hover .card-content2 span{
+    color: rgb(160, 239, 208);
+}
+
+section.projects .card-wrapper .card .card-content p{
+    color:rgb(56, 56, 56);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+section.projects .card-wrapper .card .card-content2 p{
+    color:rgb(56, 56, 56);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 section.projects .card-wrapper .card{
     position: relative;
-
+    background-color: rgb(220, 221, 221);
 }
 
-section.projects .card-wrapper .card .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+section.projects .card-wrapper .card:hover{
+    background-color: rgb(42, 42, 42);
+}
+
+section.projects .card-wrapper .card:hover .card-content p{
+    color: rgb(241, 241, 241);
+}
+
+section.projects .card-wrapper .card:hover .card-content2 p{
+    color: rgb(241, 241, 241);
+}
+
+section.intern{
+    background: rgb(233, 242, 255);
+}
+.section-heading3{
+    margin-top: 2rem;
+    color: #468B97;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+
+.section-heading3 span{
+    color: #0B666A;
+}
+
+section.intern .certificate a{
     display: flex;
     justify-content: center;
-    background: rgba(197, 202, 203, 0.9);
-    align-items: center;
-    flex-direction: column;
-    color: rgb(24, 26, 5);
-    opacity: 0;
-    transition: all .3s ease;
+    width: 50px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-right: 0.6rem;
+    transition:all .3s ease;
 }
 
-section.projects .card-wrapper .card .overlay a{
-    color: rgb(60, 63, 18);
-    text-decoration: none;
+section.intern .intern-img{
+    height: 500px;
+    width: 500px;
+    margin-left: 3rem;
 }
 
-section.projects .card-wrapper .card:hover .overlay{
-    opacity: 1;
+section.intern h3{
+    margin-top: 1.5rem;
+    color: #383762;
+}
+
+section.intern h4{
+    font-size: 1rem;
+    color: #46458C;
+}
+
+section.intern p{
+    color: rgb(74, 74, 74);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    line-height: 1.75;
+}
+
+section.curricular{
+    background: rgb(241, 239, 235);
+}
+.section-heading4{
+    margin-top: 2rem;
+    color: rgb(142, 70, 4);
+    text-align: center;
+    margin-bottom: 4rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+
+.section-heading4 span{
+    color: rgb(93, 18, 5);
+}
+
+section.curricular .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    text-align: center;
+}
+
+section.curricular .card-wrapper .card .sgc{
+    margin-left: 15rem;
+}
+
+section.curricular .card-wrapper .card .ragam{
+    margin-right: 15rem;
+}
+
+section.curricular .card-wrapper .card img{
+    height: 150px;
+    width: 150px;
+}
+
+section.curricular .card-wrapper2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+}
+
+section.curricular .card-wrapper2 .card{
+    background-color: #dedcdc;
+    margin-top: 2rem;
+    width: 60rem;
+    text-align: center;
+    margin-left: 5rem;
+}
+
+section.curricular .card-wrapper2 .card h1{
+    margin-top: 1.5rem;
+    text-align: center;
+    color: rgb(5, 24, 60);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section.curricular .card-wrapper2 .card span{
+    color: rgb(8, 33, 101);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+section.curricular .card-wrapper2 .card p{
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    color: #4a4949;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+section.curricular .instagram a{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 0.6rem;
+    transition:all .3s ease;
 }
 
 section.contact{
-    background: rgb(232, 245, 237);
-}
-
-.contact{
-    margin-top: 4rem;
-    color: rgb(24, 71, 41);
-    text-align: center;
-    margin-bottom: 5rem;
-    font-size: 1.8rem;
-}
-
-.contact span{
-    color: rgb(48, 123, 76);
+    background: rgb(31, 31, 32);
 }
 
 section.contact .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-}
-
-section.contact .card-wrapper .card{
+    grid-column-gap: 1rem;
     text-align: center;
 }
 
 section.contact .card-wrapper .card img{
-    margin-bottom: 2rem;
+    height: 25px; 
+    width: 25px;
 }
 
-section.contact .card-wrapper .card h2{
-    font-weight: 1000;
-    margin-bottom: 1rem;
-    color: black;
-    font-size: 1.2rem;
+section.contact .card-wrapper .card .linkedin{
+    margin-left: 27rem;
 }
 
-section.contact .card-wrapper .card h6{
-    font-size: 1rem;
-    color: black;
-    line-height:1.2;
-    font-weight: 400;
+section.contact .card-wrapper .card .mail{
+    margin-right: 27rem;
 }
-
-section.contact .card-wrapper .card img{
-    height: 60px; 
-    width: 60px;
-}
-
 
 .site-main-wrapper{
     position: relative;
